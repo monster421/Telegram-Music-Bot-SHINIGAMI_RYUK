@@ -1,3 +1,8 @@
+"""
+    Telegram Voice Chat Music Bot -- 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩
+    By @mastermindvrtx
+"""
+
 from time import time
 from datetime import datetime
 from pyrogram import Client, filters, emoji
@@ -48,7 +53,7 @@ async def ping_pong(_, m: Message):
     delta_ping = time() - start
     await m_reply.edit_text(
         f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**Pong**:
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Pong**:
         `{delta_ping * 1000:.3f}ms`"""
     )
     
@@ -64,7 +69,7 @@ async def get_uptime(_, m: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
         f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
 **Uptime**:
            `{uptime}`\n
 **Start time**:
