@@ -1,6 +1,6 @@
 """
-    Telegram Voice Chat 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩
-    By @phantomxhawk
+    Telegram Voice Chat Music Bot -- 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩
+    By @mastermindvrtx
 
 """
 import os
@@ -34,12 +34,12 @@ class MusicPlayer(object):
         else:
             if len(playlist) == 1:
                 pl = f"""
-**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**[🎃](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🎃]
+**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**[🎃](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🎃]
 ✨ŇỖŴ_ƤĹÃЎĮŇĞ✨:-\n
 """
             else:
                 pl = f"""
-**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**[🎃](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🎃]
+**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**[🎃](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🎃]
 ✨ŇỖŴ_ƤĹÃЎĮŇĞ✨:-\n
 """
             pl += "\n".join([
@@ -116,9 +116,11 @@ mp = MusicPlayer()
 async def network_status_changed_handler(gc: GroupCall, is_connected: bool):
     if is_connected:
         mp.chat_id = int("-100" + str(gc.full_chat.id))
-        await mp.send_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n💋Noice I am ALIVE!💋")
+        await mp.send_text(f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**
+        [🎃](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🎃]\n💋Noice I am ALIVE!💋""")
     else:
-        await mp.send_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n😴Sleeping time!😴")              
+        await mp.send_text(f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**
+        [🎃](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🎃]\n😴Sleeping time!😴""")              
         mp.chat_id = None
 
 
