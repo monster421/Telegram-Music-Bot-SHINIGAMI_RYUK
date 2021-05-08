@@ -11,34 +11,35 @@ from pyrogram import Client, filters, emoji
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
 
-from utils.filters import main_filter, self_or_contact_filter
-from utils.vc import mp
+from thinker.filters import main_filter, self_or_contact_filter
+from thinker.voice import mp
 
-DELETE_DELAY = 8
-DURATION_AUTOPLAY_MIN = 10
-DURATION_PLAY_HOUR = 3
+DELETE_DELAY = 6
+DURATION_AUTOPLAY_MIN = 60
+DURATION_PLAY_HOUR = 2
 
 PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]
-**Send any valid audio file and i will play it in vc**
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
+**Send any valid audio file and i will play it in vc or reply /play to audio.mp3 file**
 
-**ＧＥＮＥＲＡＬ ＣＯＭＭＡＮＤＳ**
--  /play   : Reply with an audio to play/queue it, or show Now Playing.
--  /current: Show current playing time of current track
--  !helpvc  : Type for commands.
+                ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
+-  _!play_   : Reply with an audio to play/queue it.
+-  _!play_   : Also used to check playlist
+-  _!current_: Show current playing time of current track
+-  _!helpvc_ : Type for commands.
 
-**ＡＤＭＩＮ／ＯＷＮＥＲ ＣＯＭＭＡＮＤＳ**
--  !join  : Command like a boss to join voice chat of current group.
--  !leave : Leave current voice chat where is DJing.
--  !vc    : Check which VC is joined by the bot.
--  !stop  : To stop playing the song being played.
--  !pause : Pause playing.
--  !resume: Resume playing.
--  !mute  : Mute the VC.
--  !unmute: Unmute the VC.
--  !replay: Play from the beginning with.
--  !skip  : [n] ...  Skip current or n where n >= 2.
--  !clean : Remove unused RAW files. 
+                   ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
+-  _!join_  : Command like a boss to join voice chat of current group.
+-  _!leave_ : Leave current voice chat where is DJing.
+-  _!vc_    : Check which VC is joined by the bot.
+-  _!stop_  : To stop playing the song being played.
+-  _!pause_ : Pause playing.
+-  _!resume_: Resume playing.
+-  _!mute_  : Mute the VC.
+-  _!unmute_: Unmute the VC.
+-  _!replay_: Play from the beginning with.
+-  _!skip_  : [n] ...  Skip current or n where n >= 2.
+-  _!clean_ : Remove unused RAW files. 
 """
 # - Pyrogram filters
 
@@ -57,7 +58,7 @@ current_vc = filters.create(current_vc_filter)
     filters.group
     & ~filters.edited
     & current_vc
-    & (filters.regex("^(\\/|!)play$") | filters.audio)
+    & (filters.regex("^(\\!)play$") | filters.audio)
 )
 async def play_track(client, m: Message):
     group_call = mp.group_call
@@ -75,7 +76,7 @@ async def play_track(client, m: Message):
         m_audio = m
     elif m.reply_to_message and m.reply_to_message.audio:
         m_audio = m.reply_to_message
-        if m_audio.audio.duration > (DURATION_PLAY_HOUR * 60 * 60):
+        if m_audio.audio.duration > (DURATION_PLAY_HOUR * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(DURATION_PLAY_HOUR)} hours won't be added to playlist"
@@ -98,7 +99,7 @@ async def play_track(client, m: Message):
         m_status = await m.reply_text(
             f"""
 **一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**Analyzing Audio & sending to heroku**"""
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Analyzing Audio & sending to heroku**"""
         )
         await mp.download_audio(playlist[0])
         group_call.input_filename = os.path.join(
@@ -118,12 +119,12 @@ async def play_track(client, m: Message):
 
 @Client.on_message(main_filter
                    & current_vc
-                   & filters.regex("^(\\/|!)current$"))
+                   & filters.regex("^(\\!)current$"))
 async def show_current_playing_time(_, m: Message):
     start_time = mp.start_time
     playlist = mp.playlist
     if not start_time:
-        reply = await m.reply_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**Unknown**")
+        reply = await m.reply_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Unknown**")
         await _delay_delete_messages((reply, m), DELETE_DELAY)
         return
     utcnow = datetime.utcnow().replace(microsecond=0)
@@ -139,7 +140,7 @@ async def show_current_playing_time(_, m: Message):
 
 @Client.on_message(main_filter
                    & (self_or_contact_filter | current_vc)
-                   & filters.regex("^(\\/|!)helpvc$"))
+                   & filters.regex("^(\\!)helpvc$"))
 async def show_help(_, m: Message):
     if mp.msg.get('helpvc') is not None:
         await mp.msg['helpvc'].delete()
@@ -171,7 +172,7 @@ async def skip_track(_, m: Message):
             reply = await m.reply_text("\n".join(text))
             await mp.send_playlist()
         except (ValueError, TypeError):
-            reply = await m.reply_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**Invalid input**",
+            reply = await m.reply_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Invalid input**",
                                        disable_web_page_preview=True)
         await _delay_delete_messages((reply, m), DELETE_DELAY)
 
@@ -183,7 +184,7 @@ async def join_group_call(client, m: Message):
     group_call = mp.group_call
     group_call.client = client
     if group_call.is_connected:
-        await m.reply_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**Already joined**")
+        await m.reply_text(f"**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Already joined**")
         return
     await group_call.start(m.chat.id)
     await m.delete()
@@ -211,7 +212,7 @@ async def list_voice_chat(client, m: Message):
         chat = await client.get_chat(chat_id)
         reply = await m.reply_text(
             f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
 **currently in the voice chat:**
 **{chat.title}**"""
         )
@@ -230,7 +231,7 @@ async def stop_playing(_, m: Message):
     group_call.stop_playout()
     reply = await m.reply_text(f"""
 **一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**⏹Stopped Singing**""")
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**⏹Stopped Singing**""")
     await mp.update_start_time(reset=True)
     mp.playlist.clear()
     await _delay_delete_messages((reply, m), DELETE_DELAY)
@@ -261,7 +262,7 @@ async def pause_playing(_, m: Message):
     await mp.update_start_time(reset=True)
     reply = await m.reply_text(f"""
 **一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**⏸Paused**""",
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**⏸Paused**""",
                                quote=False)
     mp.msg['pause'] = reply
     await m.delete()
@@ -275,7 +276,7 @@ async def resume_playing(_, m: Message):
     mp.group_call.resume_playout()
     reply = await m.reply_text(f"""
 **一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]**▶️Resumed**""",
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**▶️Resumed**""",
                                quote=False)
     if mp.msg.get('pause') is not None:
         await mp.msg['pause'].delete()
@@ -313,7 +314,7 @@ async def mute(_, m: Message):
     group_call.set_is_mute(True)
     reply = await m.reply_text(f"""
 **一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
 **✖️Muted**""")
     await _delay_delete_messages((reply, m), DELETE_DELAY)
 
@@ -327,7 +328,7 @@ async def unmute(_, m: Message):
     group_call.set_is_mute(False)
     reply = await m.reply_text(f"""
 **一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]\n
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]\n
 **🎶Unmuted**""")
     await _delay_delete_messages((reply, m), DELETE_DELAY)
 
