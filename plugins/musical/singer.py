@@ -1,6 +1,6 @@
 """
-    Telegram Voice Chat Bot.
-    Copyright (C) 2021 @phantomxhawk
+Telegram Voice Chat Bot.
+Copyright (C) 2021 @phantomxhawk
 """
 
 import asyncio
@@ -15,8 +15,8 @@ from thinker.filters import main_filter, self_or_contact_filter
 from thinker.voice import mp
 
 DELETE_DELAY = 6
-DURATION_AUTOPLAY_MIN = 60
-DURATION_PLAY_HOUR = 2
+DURATION_AUTOPLAY_MIN = 1800
+DURATION_PLAY_HOUR = 3
 
 PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
 [🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
