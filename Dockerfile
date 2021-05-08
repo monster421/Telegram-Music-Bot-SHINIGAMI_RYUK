@@ -10,11 +10,11 @@ RUN python -m pip install --upgrade pip
 RUN python -m pip install wheel Pyrogram TgCrypto
 RUN python -m pip install pytgcalls ffmpeg-python psutil
 
-RUN git clone https://github.com/phantomXhawk/Music-Player-Bot.git && \
-    cd Music-Player-Bot && \
+RUN git clone https://github.com/mastermindvrtx/Telegram-VC-SingerVrtxBot.git && \
+    cd Telegram-VC-SingerVrtxBot && \
     pip3 install -U -r requirements.txt
 
-WORKDIR /Music-Player-Bot
+WORKDIR /Telegram-VC-SingerVrtxBot
 CMD python3 main.py
 
 
