@@ -1,12 +1,12 @@
 
 ## *一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一*
-<img src="https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg" align="centre">
+<img src="https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg" align="centre">
 
 ## 
 
 ##
 |--
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/phantomXhawk/Music-Player-Bot.git/tree/dev)--|**The easiest way to deploy  Music-Player-Bot**
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-VC-SingerVrtxBot.git/tree/dev)--|**The easiest way to deploy  Music-Player-Bot**
 
 |--------------------------------------------------------------------**Deploy process**
 
