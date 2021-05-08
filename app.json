@@ -1,0 +1,39 @@
+{
+  "name": "一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一",
+  "description": "Play Audio in Telegram Voice Chats",
+  "repository": "https://github.com/phantomXhawk/Music-Player-Bot.git",
+  "logo": "https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg",
+  "keywords": [
+    "telegram",
+    "userbot",
+    "voicechat",
+    "music",
+    "python",
+    "pyrogram",
+    "pytgcalls",
+    "tgcalls",
+    "voip"
+ ],
+  "env": {
+    "API_ID": {
+            "description": "api_id part of your Telegram API Key from my.telegram.org/apps",
+            "required": true
+    },
+    "API_HASH": {
+            "description": "api_hash part of your Telegram API Key from my.telegram.org/apps",
+            "required": true
+    },
+    "SESSION_NAME": {
+            "description": "Session string, read the README to learn how to export it with Pyrogram",
+            "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/phantomXhawk/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
