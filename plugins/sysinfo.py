@@ -1,4 +1,9 @@
-"""!sysinfo use psutil to get system information"""
+"""
+    Telegram Voice Chat Music Bot -- 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩
+    By @mastermindvrtx
+
+!sysinfo use psutil to get system information
+"""
 from datetime import datetime
 import psutil
 from psutil._common import bytes2human
@@ -86,7 +91,7 @@ async def generate_sysinfo(workdir):
                    & filters.regex("^!sysinfo$"))
 async def get_sysinfo(client, m):
     response = """**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**
-[🍺](https://telegra.ph/file/ec5849d8b40f7a4e5020f.jpg)[🍺]\n
+[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]\n
 System Information:\n"""
 
     m_reply = await m.reply_text(f"{response}`...`")
