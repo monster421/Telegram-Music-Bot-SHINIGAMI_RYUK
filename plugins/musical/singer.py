@@ -21,7 +21,7 @@ DURATION_PLAY_HOUR = 3
 
 PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
 [🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
-**Send any valid audio file and i will play it in vc or reply /play to audio.mp3 file**
+**Send any valid audio file and i will play it in vc or reply !play to audio.mp3 file**
 
                 ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
 -  !play   : Reply with an audio to play/queue it.
