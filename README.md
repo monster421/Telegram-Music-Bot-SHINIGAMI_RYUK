@@ -1,7 +1,7 @@
 ## *一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一*
 <img src="https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg" align="centre">
 
-* Working _Rityuk-Singer-Vrtx-Bot_ [@singervrtxbot](https://t.me/singervrtxbot)
+* Working _Rityuk-Singer-Vrtx-Bot_ [@singervrtxbot](https://t.me/musicvrtx)
 ##
 |--
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git/tree/dev)--|**The easiest way to deploy  Music-Player-Bot**
