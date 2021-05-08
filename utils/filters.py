@@ -1,5 +1,6 @@
 """
-     Voice Chat SingerVrtx_Bot
+    Telegram Voice Chat Music Bot -- 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩
+    By @mastermindvrtx
 """
 from pyrogram import filters
 
