@@ -14,9 +14,10 @@ from pyrogram.types import Message
 from thinker.filters import main_filter, self_or_contact_filter
 from thinker.voice import mp
 
-DELETE_DELAY = 6
-DURATION_AUTOPLAY_MIN = 1800
+DELETE_DELAY = 8
+DURATION_AUTOPLAY_MIN = 10
 DURATION_PLAY_HOUR = 3
+
 
 PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
 [🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
@@ -65,7 +66,7 @@ async def play_track(client, m: Message):
     playlist = mp.playlist
     # check audio
     if m.audio:
-        if m.audio.duration > (DURATION_AUTOPLAY_MIN * 60 * 60 * 60):
+        if m.audio.duration > (DURATION_AUTOPLAY_MIN * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(DURATION_AUTOPLAY_MIN)} min won't be automatically "
@@ -76,7 +77,7 @@ async def play_track(client, m: Message):
         m_audio = m
     elif m.reply_to_message and m.reply_to_message.audio:
         m_audio = m.reply_to_message
-        if m_audio.audio.duration > (DURATION_PLAY_HOUR * 60):
+        if m_audio.audio.duration > (DURATION_PLAY_HOUR * 60 * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(DURATION_PLAY_HOUR)} hours won't be added to playlist"
