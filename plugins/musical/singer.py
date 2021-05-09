@@ -65,7 +65,7 @@ async def play_track(client, m: Message):
     playlist = mp.playlist
     # check audio
     if m.audio:
-        if m.audio.duration > (DURATION_AUTOPLAY_MIN * 60):
+        if m.audio.duration > (DURATION_AUTOPLAY_MIN * 60 * 60 * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(DURATION_AUTOPLAY_MIN)} min won't be automatically "
@@ -152,10 +152,10 @@ async def show_help(_, m: Message):
                    & self_or_contact_filter
                    & current_vc
                    & filters.command("next", prefixes="!"))
-async def next_track(_, m: Message):
+async def skip_track(_, m: Message):
     playlist = mp.playlist
     if len(m.command) == 1:
-        await mp.next_current_playing()
+        await mp.skip_current_playing()
     else:
         try:
             items = list(dict.fromkeys(m.command[1:]))
