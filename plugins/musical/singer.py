@@ -62,7 +62,7 @@ PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ
 **.on**: Command like a boss to join voice chat of current group.
 **.off**: Leave current voice chat where is DJing.
 **.check**: Check which VC is joined by the bot.
-**.stop**: To stop playing the song being played.
+**.end**: To stop playing the song being played.
 **.pause**: Pause playing.
 **.resume**: Resume playing.
 **.mutevc**: Mute the VC.
