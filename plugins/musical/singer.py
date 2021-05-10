@@ -1,6 +1,35 @@
 """
-Telegram Voice Chat Bot.
-Copyright (C) 2021 @phantomxhawk
+|---------------------------------------------------_____________$$$
+|---------------------------------------------------_____________$$$$
+|---------------------------------------------------_____________$$$$
+|---------------------------------------------------_____________$$$$$
+|---------------------------------------------------_____________$$$$$$
+|---------------------------------------------------_____________$$$$$$$
+|---------------------------------------------------_____________$$$$$$$$
+|---------------------------------------------------_____________$$$$$$$$$
+|---------------------------------------------------____________$$$__$$$$$$
+|---------------------------------------------------____________$$$___$$$$$$
+|---------------------------------------------------____________$$$____$$$$$
+|---------------------------------------------------____________$$$_____$$$$$
+|---------------------------------------------------____________$$$______$$$$
+|---------------------------------------------------____________$$$_______$$$$
+|---------------------------------------------------____________$$$_______$$$$
+|---------------------------------------------------____________$$$________$$$
+|---------------------------------------------------____________$$$________$$$
+|---------------------------------------------------____________$$$________$$$
+|---------------------------------------------------____________$$$________$$
+|---------------------------------------------------____________$$________$$$
+|---------------------------------------------------____________$$_______$$$
+|---------------------------------------------------____________$$______$$$
+|---------------------------------------------------_____$$$$$$$$$_____$$$
+|---------------------------------------------------___$$$$$$$$$$$___$$$
+|---------------------------------------------------_$$$$$$$$$$$$$__$$$
+|---------------------------------------------------$$$$$$$$$$$$$$$$$
+|---------------------------------------------------$$$$$$$$$$$$$
+|---------------------------------------------------$$$$$$$$$$$$
+|---------------------------------------------------_$$$$$$$$$
+|---------------------------------------------------___$$$$
+ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ
 """
 
 import asyncio
@@ -24,23 +53,23 @@ PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ
 **Send any valid audio file and i will play it in vc or reply !play to audio.mp3 file**
 
                 ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
--  .playlist: Reply with an audio to play/queue it.
--  .playlist: Also used to check playlist
--  .now: Show current playing time of current track
--  .cmd: used fot showing all bot commands.
+**.sing**: Reply with an audio to play/queue it.
+**.sing**: Also used to check playlist
+**.now**: Show current playing time of current track
+**.cmd**: used fot showing all bot commands.
 
                    ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
--  .joinvc: Command like a boss to join voice chat of current group.
--  .leavevc: Leave current voice chat where is DJing.
--  .vc: Check which VC is joined by the bot.
--  .stopvc: To stop playing the song being played.
--  .pausevc: Pause playing.
--  .resumevc: Resume playing.
--  .mutevc: Mute the VC.
--  .unmutevc: Unmute the VC.
--  .replay: Play from the beginning with.
--  .skip: Skip the current or skip n(n=>2).
--  .clean: Remove unused RAW files. 
+**.on**: Command like a boss to join voice chat of current group.
+**.off**: Leave current voice chat where is DJing.
+**.check**: Check which VC is joined by the bot.
+**.stop**: To stop playing the song being played.
+**.pause**: Pause playing.
+**.resume**: Resume playing.
+**.mutevc**: Mute the VC.
+**.unmutevc**: Unmute the VC.
+**.replay**: Play from the beginning with.
+**.skip**: Skip the current or skip n(n=>2).
+**.cache**: Remove unused RAW files. 
 """
 # - Pyrogram filters
 
@@ -59,7 +88,7 @@ current_vc = filters.create(current_vc_filter)
     filters.group
     & ~filters.edited
     & current_vc
-    & (filters.regex("^.playlist$") | filters.audio)
+    & (filters.regex("^.sing$") | filters.audio)
 )
 async def play_track(client, m: Message):
     group_call = mp.group_call
@@ -97,10 +126,9 @@ async def play_track(client, m: Message):
     # add to playlist
     playlist.append(m_audio)
     if len(playlist) == 1:
-        m_status = await m.reply_text(
-            f"""
+        m_status = await m.reply_text(f"""[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)
 **一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
-[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Analyzing Audio & sending to heroku**"""
+**Analyzing Audio & sending to heroku**"""
         )
         await mp.download_audio(playlist[0])
         group_call.input_filename = os.path.join(
@@ -120,7 +148,7 @@ async def play_track(client, m: Message):
 
 @Client.on_message(main_filter
                    & current_vc
-                   & filters.regex("^.current$"))
+                   & filters.regex("^.now$"))
 async def show_current_playing_time(_, m: Message):
     start_time = mp.start_time
     playlist = mp.playlist
@@ -141,7 +169,7 @@ async def show_current_playing_time(_, m: Message):
 
 @Client.on_message(main_filter
                    & (self_or_contact_filter | current_vc)
-                   & filters.regex("^.helpvc$"))
+                   & filters.regex("^.cmd$"))
 async def show_help(_, m: Message):
     if mp.msg.get('helpvc') is not None:
         await mp.msg['helpvc'].delete()
@@ -180,7 +208,7 @@ async def skip_track(_, m: Message):
 
 @Client.on_message(main_filter
                    & self_or_contact_filter
-                   & filters.regex("^.joinvc$"))
+                   & filters.regex("^.on$"))
 async def join_group_call(client, m: Message):
     group_call = mp.group_call
     group_call.client = client
@@ -194,7 +222,7 @@ async def join_group_call(client, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^.leavevc$"))
+                   & filters.regex("^.off$"))
 async def leave_voice_chat(_, m: Message):
     group_call = mp.group_call
     mp.playlist.clear()
@@ -205,7 +233,7 @@ async def leave_voice_chat(_, m: Message):
 
 @Client.on_message(main_filter
                    & self_or_contact_filter
-                   & filters.regex("^.chat$"))
+                   & filters.regex("^.check$"))
 async def list_voice_chat(client, m: Message):
     group_call = mp.group_call
     if group_call.is_connected:
@@ -226,7 +254,7 @@ async def list_voice_chat(client, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^.stopvc$"))
+                   & filters.regex("^.end$"))
 async def stop_playing(_, m: Message):
     group_call = mp.group_call
     group_call.stop_playout()
@@ -257,7 +285,7 @@ async def restart_playing(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^.pausevc"))
+                   & filters.regex("^.pause"))
 async def pause_playing(_, m: Message):
     mp.group_call.pause_playout()
     await mp.update_start_time(reset=True)
@@ -272,7 +300,7 @@ async def pause_playing(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^.resumevc"))
+                   & filters.regex("^.resume"))
 async def resume_playing(_, m: Message):
     mp.group_call.resume_playout()
     reply = await m.reply_text(f"""
@@ -288,7 +316,7 @@ async def resume_playing(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^.clean$"))
+                   & filters.regex("^.cache$"))
 async def clean_raw_pcm(client, m: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
