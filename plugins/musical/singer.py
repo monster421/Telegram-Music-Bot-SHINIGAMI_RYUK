@@ -56,7 +56,7 @@ PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ
 **.sing**: Reply with an audio to play/queue it.
 **.sing**: Also used to check playlist
 **.now**: Show current playing time of current track
-**.cmd**: used fot showing all bot commands.
+**.cmd**: used for showing all bot commands.
 
                    ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
 **.on**: Command like a boss to join voice chat of current group.
