@@ -14,7 +14,7 @@ from pyrogram.types import Message
 from thinker.filters import main_filter, self_or_contact_filter
 from thinker.voice import mp
 
-DELETE_DELAY = 3
+DELETE_DELAY = 2
 DURATION_AUTOPLAY_MIN = 10
 DURATION_PLAY_HOUR = 1
 
@@ -26,8 +26,8 @@ PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ
                 ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
 -  .playlist: Reply with an audio to play/queue it.
 -  .playlist: Also used to check playlist
--  .current: Show current playing time of current track
--  .helpvc: Type for commands.
+-  .now: Show current playing time of current track
+-  .cmd: used fot showing all bot commands.
 
                    ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
 -  .joinvc: Command like a boss to join voice chat of current group.
