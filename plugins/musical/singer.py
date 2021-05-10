@@ -14,9 +14,9 @@ from pyrogram.types import Message
 from thinker.filters import main_filter, self_or_contact_filter
 from thinker.voice import mp
 
-DELETE_DELAY = 8
+DELETE_DELAY = 3
 DURATION_AUTOPLAY_MIN = 10
-DURATION_PLAY_HOUR = 3
+DURATION_PLAY_HOUR = 1
 
 
 PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一**\n
@@ -24,23 +24,23 @@ PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ
 **Send any valid audio file and i will play it in vc or reply !play to audio.mp3 file**
 
                 ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
--  !play   : Reply with an audio to play/queue it.
--  !play   : Also used to check playlist
--  !current: Show current playing time of current track
--  !helpvc : Type for commands.
+-  .playlist: Reply with an audio to play/queue it.
+-  .playlist: Also used to check playlist
+-  .current: Show current playing time of current track
+-  .helpvc: Type for commands.
 
                    ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
--  !joinvc  : Command like a boss to join voice chat of current group.
--  !leavevc : Leave current voice chat where is DJing.
--  !vc      : Check which VC is joined by the bot.
--  !stopvc  : To stop playing the song being played.
--  !pausevc : Pause playing.
--  !resumevc: Resume playing.
--  !mutevc  : Mute the VC.
--  !unmutevc: Unmute the VC.
--  !replay  : Play from the beginning with.
--  !next    : Skip the current or skip n(n=>2).
--  !clean   : Remove unused RAW files. 
+-  .joinvc: Command like a boss to join voice chat of current group.
+-  .leavevc: Leave current voice chat where is DJing.
+-  .vc: Check which VC is joined by the bot.
+-  .stopvc: To stop playing the song being played.
+-  .pausevc: Pause playing.
+-  .resumevc: Resume playing.
+-  .mutevc: Mute the VC.
+-  .unmutevc: Unmute the VC.
+-  .replay: Play from the beginning with.
+-  .skip: Skip the current or skip n(n=>2).
+-  .clean: Remove unused RAW files. 
 """
 # - Pyrogram filters
 
@@ -59,7 +59,7 @@ current_vc = filters.create(current_vc_filter)
     filters.group
     & ~filters.edited
     & current_vc
-    & (filters.regex("^(\\!)play$") | filters.audio)
+    & (filters.regex("^.playlist$") | filters.audio)
 )
 async def play_track(client, m: Message):
     group_call = mp.group_call
@@ -120,7 +120,7 @@ async def play_track(client, m: Message):
 
 @Client.on_message(main_filter
                    & current_vc
-                   & filters.regex("^(\\!)current$"))
+                   & filters.regex("^.current$"))
 async def show_current_playing_time(_, m: Message):
     start_time = mp.start_time
     playlist = mp.playlist
@@ -141,7 +141,7 @@ async def show_current_playing_time(_, m: Message):
 
 @Client.on_message(main_filter
                    & (self_or_contact_filter | current_vc)
-                   & filters.regex("^(\\!)helpvc$"))
+                   & filters.regex("^.helpvc$"))
 async def show_help(_, m: Message):
     if mp.msg.get('helpvc') is not None:
         await mp.msg['helpvc'].delete()
@@ -152,7 +152,7 @@ async def show_help(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.command("next", prefixes="!"))
+                   & filters.command("skip", prefixes="."))
 async def skip_track(_, m: Message):
     playlist = mp.playlist
     if len(m.command) == 1:
@@ -180,7 +180,7 @@ async def skip_track(_, m: Message):
 
 @Client.on_message(main_filter
                    & self_or_contact_filter
-                   & filters.regex("^!joinvc$"))
+                   & filters.regex("^.joinvc$"))
 async def join_group_call(client, m: Message):
     group_call = mp.group_call
     group_call.client = client
@@ -194,7 +194,7 @@ async def join_group_call(client, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!leavevc$"))
+                   & filters.regex("^.leavevc$"))
 async def leave_voice_chat(_, m: Message):
     group_call = mp.group_call
     mp.playlist.clear()
@@ -205,7 +205,7 @@ async def leave_voice_chat(_, m: Message):
 
 @Client.on_message(main_filter
                    & self_or_contact_filter
-                   & filters.regex("^!vc$"))
+                   & filters.regex("^.chat$"))
 async def list_voice_chat(client, m: Message):
     group_call = mp.group_call
     if group_call.is_connected:
@@ -226,7 +226,7 @@ async def list_voice_chat(client, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!stopvc$"))
+                   & filters.regex("^.stopvc$"))
 async def stop_playing(_, m: Message):
     group_call = mp.group_call
     group_call.stop_playout()
@@ -241,7 +241,7 @@ async def stop_playing(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!replay$"))
+                   & filters.regex("^.replay$"))
 async def restart_playing(_, m: Message):
     group_call = mp.group_call
     if not mp.playlist:
@@ -257,7 +257,7 @@ async def restart_playing(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!pausevc"))
+                   & filters.regex("^.pausevc"))
 async def pause_playing(_, m: Message):
     mp.group_call.pause_playout()
     await mp.update_start_time(reset=True)
@@ -272,7 +272,7 @@ async def pause_playing(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!resumevc"))
+                   & filters.regex("^.resumevc"))
 async def resume_playing(_, m: Message):
     mp.group_call.resume_playout()
     reply = await m.reply_text(f"""
@@ -288,7 +288,7 @@ async def resume_playing(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!clean$"))
+                   & filters.regex("^.clean$"))
 async def clean_raw_pcm(client, m: Message):
     download_dir = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR)
     all_fn: list[str] = os.listdir(download_dir)
@@ -309,7 +309,7 @@ async def clean_raw_pcm(client, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!mutevc$"))
+                   & filters.regex("^.mutevc$"))
 async def mute(_, m: Message):
     group_call = mp.group_call
     group_call.set_is_mute(True)
@@ -323,7 +323,7 @@ async def mute(_, m: Message):
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^!unmutevc$"))
+                   & filters.regex("^.unmutevc$"))
 async def unmute(_, m: Message):
     group_call = mp.group_call
     group_call.set_is_mute(False)
