@@ -71,7 +71,7 @@ PLAYING_HELP =f"""**一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ
 **.skip**: Skip the current or skip n(n=>2).
 **.cache**: Remove unused RAW files. 
 **.alive**: To check the ping status with server.
-**.sysinfo**: To check system information.
+**.sys**: To check system information.
 **.cpu**: To check up time of the cpu and bot.
 """
 # - Pyrogram filters
