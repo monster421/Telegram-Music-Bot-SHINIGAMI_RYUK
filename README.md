@@ -26,14 +26,26 @@
 
 |--------------------------------------------------------------------**How to Use**
 
-1. Start the userbot, try  `!ping`,  `!uptime` or `!sysinfo` command to check if the bot is working.
-2. Send `!join` to a voice chat enabled group chat,Be sure to make the userbot account as group admin and give  it at least the following permissions:
-  -> Delete messages
-    -> Manage voice chats (optional)
-3. Reply to an audio with `/play` to start playing it in the voice chat, every
-   member of the group can use common commands such like `/play`, `/current`
-   and `!help` now.
-4. Check `!help` for more commands
+                ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
+**.sing**: Reply with an audio to play/queue it.
+**.sing**: Also used to check playlist
+**.now**: Show current playing time of current track
+**.cmd**: used for showing all bot commands.
+                   ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
+**.on**: Command like a boss to join voice chat of current group.
+**.off**: Leave current voice chat where is DJing.
+**.check**: Check which VC is joined by the bot.
+**.end**: To stop playing the song being played.
+**.pause**: Pause playing.
+**.resume**: Resume playing.
+**.mutevc**: Mute the VC.
+**.unmutevc**: Unmute the VC.
+**.replay**: Play from the beginning with.
+**.skip**: Skip the current or skip n(n=>2).
+**.cache**: Remove unused RAW files. 
+**.alive**: To check the ping status with server.
+**.sys**: To check system information.
+**.cpu**: To check up time of the cpu and bot.
 
 
 
