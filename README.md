@@ -4,7 +4,7 @@
 * Working _Rityuk-Singer-Vrtx-Bot_ [@singervrtxbot](https://t.me/musicvrtx)
 ##
 |--
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git/tree/dev)--|**The easiest way to deploy  Music-Player-Bot**
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git/tree/Vrtx)--|**The easiest way to deploy  Music-Player-Bot**
 
 |--------------------------------------------------------------------**Deploy process**
 
