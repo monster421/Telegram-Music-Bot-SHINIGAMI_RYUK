@@ -24,14 +24,14 @@
   * Show current playing position of the audio
 
 
-|--------------------------------------------------------------------**How to Use**
+|--------------------------------------------------------------------**COMMANNDS**
 
-                ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
+# ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
 **.sing**: Reply with an audio to play/queue it.
 **.sing**: Also used to check playlist
 **.now**: Show current playing time of current track
 **.cmd**: used for showing all bot commands.
-                   ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
+# ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
 **.on**: Command like a boss to join voice chat of current group.
 **.off**: Leave current voice chat where is DJing.
 **.check**: Check which VC is joined by the bot.
