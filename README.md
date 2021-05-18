@@ -1,4 +1,4 @@
-# from Ryuk_Bot.__main__ import Vrtx   NEW VERSION COMING UP
+# "from Ryuk_Bot.__main__ import Vrtx"   NEW VERSION COMING UP
 ##                      .*一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一*
 <img src="https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg" align="centre">
 
