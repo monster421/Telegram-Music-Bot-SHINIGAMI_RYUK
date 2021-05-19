@@ -13,7 +13,7 @@
   by yourself or
   through -----> [Replit](https://replit.com/@phantomXhawk/stringsessiongeneratepy)
 * Enable the worker after deploy the project to Heroku
-* !! NOTE !! --> Add this in heroku vars if ffmpeg errors shows while deploying --> []
+* !! NOTE !! --> Add this in heroku vars if ffmpeg errors shows while deploying --> [https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git]
 
 # WAIT FOR FULL README.....
 
