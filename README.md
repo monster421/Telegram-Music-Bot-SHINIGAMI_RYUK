@@ -1,9 +1,11 @@
-#  一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
+<img align="right" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/><img src="https://github-profile-trophy.vercel.app/?username=mastermindvrtx&theme=dracula&column=3&margin-w=15&margin-h=15" alt="mastermindvrtx" />
+
+
+#  一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
 <img src="https://telegra.ph/file/2e419eca28153982c5e54.jpg" align="centre">
 
-##
-|--
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)--|**The easiest way to deploy  Music-Player-Bot**
+
 
 |----------------------------------------------------**Deploy process**>
 
