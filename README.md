@@ -1,4 +1,4 @@
-<img align="right" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/><img src="https://github-profile-trophy.vercel.app/?username=mastermindvrtx&theme=dracula&column=3&margin-w=15&margin-h=15" alt="mastermindvrtx" />
+<img align="right" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/><p align="centre"> <img src="https://telegra.ph/file/3f287a7ff7bd6d63fbd60.jpg" />
 
 
 #  一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一 
