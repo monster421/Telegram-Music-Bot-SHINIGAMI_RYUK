@@ -19,7 +19,7 @@ from handlers.ryuk.shinigami import current_vc
 from handlers.ryuk.shinigami import PLAYING_HELP
 
 from handlers.ryuk.shinigami import RM_TIME
-from handlers.ryuk.shinigami import MSGS, ADD_AUTO_MUSIC_TIME, VC_AUTO_EXIT_TIME
+from handlers.ryuk.shinigami import ADD_AUTO_MUSIC_TIME, VC_AUTO_EXIT_TIME
 
 @Client.on_message(
     filters.group
