@@ -63,7 +63,7 @@ async def play_track(client, m: Message):
     # add to playlist
     playlist.append(m_audio)
     if len(playlist) == 1:
-        m_status = await m.reply_text(f"""[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)
+        m_status = await m.reply_text(f"""[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
 **Analyzing Audio & sending to heroku**"""
         )

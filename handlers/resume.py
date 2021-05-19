@@ -28,7 +28,8 @@ async def resume_playing(_, m: Message):
     mp.group_call.resume_playout()
     reply = await m.reply_text(f"""
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
-[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**▶️Resumed**""",
+[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
+**▶️Resumed**""",
                                quote=False)
     if mp.msg.get('pause') is not None:
         await mp.msg['pause'].delete()

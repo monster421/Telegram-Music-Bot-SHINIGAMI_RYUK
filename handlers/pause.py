@@ -30,7 +30,8 @@ async def pause_playing(_, m: Message):
     await mp.update_start_time(reset=True)
     reply = await m.reply_text(f"""
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
-[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**⏸Paused**""",
+[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
+**⏸Paused**""",
                                quote=False)
     mp.msg['pause'] = reply
     await m.delete()

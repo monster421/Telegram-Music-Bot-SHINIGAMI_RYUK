@@ -45,6 +45,6 @@ async def skip_track(_, m: Message):
             reply = await m.reply_text("\n".join(text))
             await mp.send_playlist()
         except (ValueError, TypeError):
-            reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Invalid input**",
+            reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)**Invalid input**",
                                        disable_web_page_preview=True)
         await _delay_delete_messages((reply, m), RM_TIME)

@@ -29,7 +29,8 @@ async def stop_playing(_, m: Message):
     group_call.stop_playout()
     reply = await m.reply_text(f"""
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
-[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**⏹Stopped Singing**""")
+[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
+**⏹Stopped Singing**""")
     await mp.update_start_time(reset=True)
     mp.playlist.clear()
     await _delay_delete_messages((reply, m), RM_TIME)

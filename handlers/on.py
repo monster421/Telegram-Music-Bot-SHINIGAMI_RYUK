@@ -28,7 +28,7 @@ async def join_group_call(client, m: Message):
     group_call = mp.group_call
     group_call.client = client
     if group_call.is_connected:
-        await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]**Already joined**")
+        await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🍺]**Already joined**")
         return
     await group_call.start(m.chat.id)
     await m.delete()

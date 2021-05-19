@@ -32,7 +32,7 @@ async def list_voice_chat(client, m: Message):
         chat = await client.get_chat(chat_id)
         reply = await m.reply_text(
             f"""一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
-[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
+[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
 **currently in the voice chat:**
 **{chat.title}**"""
         )
