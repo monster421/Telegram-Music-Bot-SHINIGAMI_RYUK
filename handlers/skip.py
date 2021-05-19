@@ -19,7 +19,7 @@ from handlers.ryuk.shinigami import current_vc
 from handlers.ryuk.shinigami import PLAYING_HELP
 
 from handlers.ryuk.shinigami import RM_TIME
-from handlers.ryuk.shinigami import MSGS
+
 
 @Client.on_message(main_filter
                    & self_or_contact_filter

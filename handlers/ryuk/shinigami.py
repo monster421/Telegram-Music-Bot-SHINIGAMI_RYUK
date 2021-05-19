@@ -24,7 +24,6 @@ ADD_AUTO_MUSIC_TIME = 10
 # in hour = 1hour
 VC_AUTO_EXIT_TIME = 1
 
-MSGS =m
 
 PLAYING_HELP =f"""一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
 [🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
