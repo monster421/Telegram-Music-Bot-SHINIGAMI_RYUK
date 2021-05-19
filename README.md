@@ -1,5 +1,4 @@
-<img align="right" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/><p align="centre"> <img src="https://telegra.ph/file/3f287a7ff7bd6d63fbd60.jpg" />
-
+<img align="right" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/><img src="http://ForTheBadge.com/images/badges/made-with-python.svg" />
 
 #  一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
