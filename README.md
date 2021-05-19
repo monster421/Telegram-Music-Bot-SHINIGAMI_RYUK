@@ -15,5 +15,6 @@
 * Enable the worker after deploy the project to Heroku
 * !! NOTE !! --> Add this in heroku vars if ffmpeg errors shows while deploying --> []
 
+# WAIT FOR FULL README.....
 
 
