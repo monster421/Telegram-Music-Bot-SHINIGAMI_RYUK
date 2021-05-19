@@ -1,5 +1,5 @@
 #  一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一 
-##|--[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git/tree/Vrtx)--|**The easiest way to deploy
+##|--[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git/tree/Vrtx)
 <img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/>
 <img aligh="centre" src="http://ForTheBadge.com/images/badges/made-with-python.svg" />
 <img alight="right" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/> 
