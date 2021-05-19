@@ -1,8 +1,8 @@
 {
-  "name": "一═デ︻ 𝕊𝕚𝕟𝕘𝕖𝕣𝕍𝕣𝕥𝕩 ︻デ═一",
+  "name": "一═デ︻ ֆɦɨռɨɢǟʍɨ_Rʏʊӄ ︻デ═一",
   "description": "Play Audio in Telegram Voice Chats",
-  "repository": "https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git",
-  "logo": "https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg",
+  "repository": "https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git",
+  "logo": "hhttps://telegra.ph/file/bc103bdce09dc35b49209.jpg",
   "website": "https://t,me/musicvrtx",
 
   "keywords": [
@@ -32,7 +32,7 @@
   },
   "buildpacks": [
     {
-      "url": "https://github.com/mastermindvrtx/heroku-buildpack-ffmpeg-latest.git"
+      "url": "https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git"
     },
     {
       "url": "heroku/python"
