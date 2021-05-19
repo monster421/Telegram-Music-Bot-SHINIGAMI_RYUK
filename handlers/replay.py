@@ -18,7 +18,7 @@ from VOIP.voice import mp
 from handlers.ryuk.shinigami import current_vc
 from handlers.ryuk.shinigami import PLAYING_HELP
 
-from handlers.ryuk.shinigami import RM_TIME
+from handlers.ryuk.shinigami import DELETE_DELAY
 
 
 @Client.on_message(main_filter
@@ -34,4 +34,4 @@ async def restart_playing(_, m: Message):
     reply = await m.reply_text(
         f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n🔁Playing from the beginning"
     )
-    await _delay_delete_messages((reply, m), RM_TIME)
+    await _delay_delete_messages((reply, m), DELETE_DELAY)

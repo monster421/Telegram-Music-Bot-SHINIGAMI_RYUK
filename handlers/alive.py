@@ -57,7 +57,7 @@ async def ping_pong(_, m: Message):
     delta_ping = time() - start
     await m_reply.edit_text(f"""
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
+[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
 by~ @mastermindvrtx        
 **Alive and ready to play✌🏻**:
 `{delta_ping * 1000:.3f}ms`
@@ -75,7 +75,7 @@ async def get_uptime(_, m: Message):
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(f"""
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
+[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
 **Uptime**:
     `{uptime}`\n
 **Start time**:

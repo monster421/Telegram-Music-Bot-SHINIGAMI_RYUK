@@ -18,7 +18,7 @@ from VOIP.voice import mp
 from handlers.ryuk.shinigami import current_vc
 from handlers.ryuk.shinigami import PLAYING_HELP
 
-from handlers.ryuk.shinigami import RM_TIME
+from handlers.ryuk.shinigami import DELETE_DELAY
 
 
 @Client.on_message(main_filter

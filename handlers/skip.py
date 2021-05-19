@@ -18,7 +18,7 @@ from VOIP.voice import mp
 from handlers.ryuk.shinigami import current_vc
 from handlers.ryuk.shinigami import PLAYING_HELP
 
-from handlers.ryuk.shinigami import RM_TIME
+from handlers.ryuk.shinigami import DELETE_DELAY
 
 
 @Client.on_message(main_filter
@@ -45,6 +45,6 @@ async def skip_track(_, m: Message):
             reply = await m.reply_text("\n".join(text))
             await mp.send_playlist()
         except (ValueError, TypeError):
-            reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)**Invalid input**",
+            reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]**Invalid input**",
                                        disable_web_page_preview=True)
-        await _delay_delete_messages((reply, m), RM_TIME)
+        await _delay_delete_messages((reply, m), DELETE_DELAY)

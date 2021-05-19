@@ -18,7 +18,7 @@ from VOIP.filters import main_filter, self_or_contact_filter
 from VOIP.voice import mp
 
 # in sec = 1sec
-RM_TIME = 1
+DELETE_DELAY = 2
 # in min = 1min
 ADD_AUTO_MUSIC_TIME = 10
 # in hour = 1hour
@@ -26,7 +26,7 @@ VC_AUTO_EXIT_TIME = 1
 
 
 PLAYING_HELP =f"""一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
-[🍺](https://telegra.ph/file/1d858bae5f9c4c178bcfb.jpg)[🍺]
+[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
 **Send any valid audio file and i will play it in vc or reply !play to audio.mp3 file**
 
                 ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.

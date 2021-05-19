@@ -18,7 +18,7 @@ from VOIP.voice import mp
 from handlers.ryuk.shinigami import current_vc
 from handlers.ryuk.shinigami import PLAYING_HELP
 
-from handlers.ryuk.shinigami import RM_TIME
+from handlers.ryuk.shinigami import DELETE_DELAY
 from handlers.ryuk.shinigami import ADD_AUTO_MUSIC_TIME, VC_AUTO_EXIT_TIME
 
 @Client.on_message(
@@ -38,7 +38,7 @@ async def play_track(client, m: Message):
                f"{str(ADD_AUTO_MUSIC_TIME)} min won't be automatically "
                "added to playlist"
            )
-           await _delay_delete_messages((reply,), RM_TIME)
+           await _delay_delete_messages((reply,), DELETE_DELAY)
            return
        m_audio = m
     elif m.reply_to_message and m.reply_to_message.audio:
@@ -48,7 +48,7 @@ async def play_track(client, m: Message):
                f"{emoji.ROBOT} audio which duration longer than "
                f"{str(VC_AUTO_EXIT_TIME)} hours won't be added to playlist"
            )
-           await _delay_delete_messages((reply,), RM_TIME)
+           await _delay_delete_messages((reply,), DELETE_DELAY)
            return
     else:
        await mp.send_playlist()
@@ -58,12 +58,12 @@ async def play_track(client, m: Message):
     if playlist and playlist[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
         reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n**Already added**")
-        await _delay_delete_messages((reply, m), RM_TIME)
+        await _delay_delete_messages((reply, m), DELETE_DELAY)
         return
     # add to playlist
     playlist.append(m_audio)
     if len(playlist) == 1:
-        m_status = await m.reply_text(f"""[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)
+        m_status = await m.reply_text(f"""[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
 **Analyzing Audio & sending to heroku**"""
         )
