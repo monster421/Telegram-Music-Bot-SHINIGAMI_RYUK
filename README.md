@@ -10,7 +10,7 @@
 [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/)
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-- Get your pyrogram session string from:<img alt="Repl.it" src="https://img.shields.io/badge/Repl.it-%230D101E.svg?&style=for-the-badge&logo=Repl.it&logoColor=white"/>[🄲🄾🄳🄴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
+- Get your pyrogram session string from:<img alt="Repl.it" src="https://img.shields.io/badge/Repl.it-%230D101E.svg?&style=for-the-badge&logo=Repl.it&logoColor=white"/>>[🅲🅾🅳🅴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
 - Enable the worker after deployed your bot on Heroku
 - Add this in heroku Buildpack if ffmpeg errors shows after deploying:[https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git]
 
