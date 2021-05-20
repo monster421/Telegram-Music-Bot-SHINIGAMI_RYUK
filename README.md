@@ -6,7 +6,7 @@
 <img aligh="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 <img src="https://telegra.ph/file/2e419eca28153982c5e54.jpg" align="centre"/>
 
-/*  𝓓𝓮𝓹𝓵𝓸𝔂 𝓹𝓻𝓸𝓬𝓮𝓼𝓼
+# ˜”*°• 𝔻𝕖𝕡𝕝𝕠𝕪 •°*”˜
 
 - Get your pyrogram session string from [replit]()
 - Enable the worker after deploy the project to Heroku
