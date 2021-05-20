@@ -8,8 +8,8 @@
 
 ## ˜”*°• 𝔻𝕖𝕡𝕝𝕠𝕪 •°*”˜
 
-- Get your pyrogram session string from [replit]()
-- Enable the worker after deploy the project to Heroku
+- Get your pyrogram session string from [replit](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
+- Enable the worker after deployed your bot on Heroku
 - Add this in heroku Buildpack if ffmpeg errors shows after deploying:[https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git]
 
 
