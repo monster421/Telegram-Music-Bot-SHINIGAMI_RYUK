@@ -11,7 +11,7 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 
-- Get your pyrogram session string from: [!](https://img.shields.io/badge/REPLIT-press%20%3E-critical)[🅲🅾🅳🅴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
+- Get your pyrogram session string from: [![@mastermindvrtx](https://img.shields.io/badge/REPLIT-press%20%3E-critical)[🅲🅾🅳🅴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
 - Enable the worker after deployed your bot on Heroku
 - Add this in heroku Buildpack if ffmpeg errors shows after deploying:[https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git]
 
