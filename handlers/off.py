@@ -3,7 +3,7 @@
 |  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
 <--------------------------->
 
-Remastered Version of Riyuk_SINGER)VRTX)BOT
+Remastered Version of Riyuk_Singer_Vrtx
 """
 import asyncio
 import os
@@ -16,7 +16,6 @@ from pyrogram.types import Message
 from VOIP.filters import main_filter, self_or_contact_filter
 from VOIP.voice import mp
 from handlers.ryuk.shinigami import current_vc
-from handlers.ryuk.shinigami import PLAYING_HELP
 
 from handlers.ryuk.shinigami import DELETE_DELAY
 
@@ -24,7 +23,7 @@ from handlers.ryuk.shinigami import DELETE_DELAY
 @Client.on_message(main_filter
                    & self_or_contact_filter
                    & current_vc
-                   & filters.regex("^.off$"))
+                   & filters.regex("!off$"))
 async def leave_voice_chat(_, m: Message):
     group_call = mp.group_call
     mp.playlist.clear()

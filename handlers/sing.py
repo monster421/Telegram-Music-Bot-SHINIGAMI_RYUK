@@ -3,7 +3,7 @@
 |  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
 <--------------------------->
 
-Remastered Version of Riyuk_SINGER)VRTX)BOT
+Remastered Version of Riyuk_Singer_Vrtx
 """
 import asyncio
 import os
@@ -16,7 +16,6 @@ from pyrogram.types import Message
 from VOIP.filters import main_filter, self_or_contact_filter
 from VOIP.voice import mp
 from handlers.ryuk.shinigami import current_vc
-from handlers.ryuk.shinigami import PLAYING_HELP
 
 from handlers.ryuk.shinigami import DELETE_DELAY
 from handlers.ryuk.shinigami import ADD_AUTO_MUSIC_TIME, VC_AUTO_EXIT_TIME
@@ -25,7 +24,7 @@ from handlers.ryuk.shinigami import ADD_AUTO_MUSIC_TIME, VC_AUTO_EXIT_TIME
     filters.group
     & ~filters.edited
     & current_vc
-    & (filters.regex("^.sing$") | filters.audio)
+    & (filters.regex("!sing$") | filters.audio)
 )
 async def play_track(client, m: Message):
     group_call = mp.group_call
@@ -57,7 +56,7 @@ async def play_track(client, m: Message):
     # check already added
     if playlist and playlist[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
-        reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n**Already added**")
+        reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n**𝘽𝙤𝙩 𝘼𝙡𝙧𝙚𝙖𝙙𝙮 𝙖𝙙𝙙𝙚𝙙**")
         await _delay_delete_messages((reply, m), DELETE_DELAY)
         return
     # add to playlist
@@ -65,7 +64,7 @@ async def play_track(client, m: Message):
     if len(playlist) == 1:
         m_status = await m.reply_text(f"""[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
-**Analyzing Audio & sending to heroku**"""
+**𝘼𝙣𝙖𝙡𝙮𝙯𝙞𝙣𝙜 𝘼𝙪𝙙𝙞𝙤 & 𝙨𝙚𝙣𝙙𝙞𝙣𝙜 𝙩𝙤 𝙨𝙚𝙧𝙫𝙚𝙧**"""
         )
         await mp.download_audio(playlist[0])
         group_call.input_filename = os.path.join(
@@ -75,7 +74,7 @@ async def play_track(client, m: Message):
         )
         await mp.update_start_time()
         await m_status.delete()
-        print(f"- PLAYING: {playlist[0].audio.title}")
+        print(f"- 𝗣𝗟𝗔𝗬𝗜𝗡𝗚: {playlist[0].audio.title}")
     await mp.send_playlist()
     for track in playlist[:2]:
         await mp.download_audio(track)

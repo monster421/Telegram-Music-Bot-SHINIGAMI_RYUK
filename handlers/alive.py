@@ -3,7 +3,7 @@
 |  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
 <--------------------------->
 
-Remastered Version of Riyuk_SINGER)VRTX)BOT
+Remastered Version of Riyuk_Singer_Vrtx
 """
 from time import time
 from datetime import datetime
@@ -49,7 +49,7 @@ async def _human_time_duration(seconds):
                    & self_or_contact_filter
                    & ~filters.edited
                    & ~filters.via_bot
-                   & filters.regex("^.me$"))
+                   & filters.regex("!ryuk$"))
 async def ping_pong(_, m: Message):
     """reply ping with pong and delete both messages"""
     start = time()
@@ -61,13 +61,17 @@ async def ping_pong(_, m: Message):
 by~ @mastermindvrtx        
 **Alive and ready to play✌🏻**:
 `{delta_ping * 1000:.3f}ms`
+
+<--------------------------->
+|  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
+<--------------------------->
 """)
     
 @Client.on_message(filters.text
                    & self_or_contact_filter
                    & ~filters.edited
                    & ~filters.via_bot
-                   & filters.regex("^.cpu$"))
+                   & filters.regex("!cpu$"))
 async def get_uptime(_, m: Message):
     """/uptime Reply with readable uptime and ISO 8601 start time"""
     current_time = datetime.utcnow()
@@ -80,6 +84,9 @@ async def get_uptime(_, m: Message):
     `{uptime}`\n
 **Start time**:
     '{START_TIME_ISO}`
-by~ @mastermindvrtx
+
+<--------------------------->
+|  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
+<--------------------------->
 """)
 

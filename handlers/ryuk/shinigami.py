@@ -3,7 +3,7 @@
 |  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
 <--------------------------->
 
-Remastered Version of Riyuk_SINGER)VRTX)BOT
+Remastered Version of Riyuk_Singer_Vrtx
 """
 
 import asyncio
@@ -17,6 +17,9 @@ from pyrogram.types import Message
 from VOIP.filters import main_filter, self_or_contact_filter
 from VOIP.voice import mp
 
+
+
+
 # in sec = 1sec
 DELETE_DELAY = 2
 # in min = 1min
@@ -24,30 +27,6 @@ ADD_AUTO_MUSIC_TIME = 10
 # in hour = 1hour
 VC_AUTO_EXIT_TIME = 1
 
-
-PLAYING_HELP =f"""一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
-**Send any valid audio file and i will play it in vc or reply !play to audio.mp3 file**
-
-                ._ＧＥＮＥＲＡＬ_ＣＯＭＭＡＮＤＳ_.
-**.sing**: Reply with an audio to play/queue it.
-**.sing**: Also used to check playlist
-**.cmd**: used for showing all bot commands.
-
-                   ._ＯＷＮＥＲ_ＣＯＭＭＡＮＤＳ_.
-**.on**: Command like a boss to join voice chat of current group.
-**.off**: Leave current voice chat where is DJing.
-**.check**: Check which VC is joined by the bot.
-**.end**: To stop playing the song being played.
-**.pause**: Pause playing.
-**.resume**: Resume playing.
-**.replay**: Play from the beginning with.
-**.skip**: Skip the current or skip n(n=>2).
-**.cache**: Remove unused RAW files. 
-**.alive**: To check the ping status with server.
-**.cpu**: To check up time of the cpu and bot.
-"""
-# - Pyrogram filters
 
 async def current_vc_filter(_, __, m: Message):
     group_call = mp.group_call
