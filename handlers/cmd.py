@@ -28,4 +28,5 @@ async def show_help(_, m: Message):
     if mp.msg.get('cmd') is not None:
         await mp.msg['cmd'].delete()
     mp.msg['cmd'] = await m.reply_text(PLAYING_HELP, quote=False)
-    await m.delete()
+    await m.delete((reply, m), DELETE_DELAY)
+    #await _delay_delete_messages((reply, m), DELETE_DELAY)
