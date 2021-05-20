@@ -1,4 +1,4 @@
-#   一═デ︻︻︻_**ֆɦɨռɨɢǟʍɨ_Rʏʊӄ**_︻︻︻デ═一 
+#   一═デ︻Σ︻Σ︻_**ֆɦɨռɨɢǟʍɨ_Rʏʊӄ**_︻Σ︻Σ︻デ═一 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git/tree/Vrtx)
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/>
 <img align="centre" src="http://ForTheBadge.com/images/badges/made-with-python.svg" />
