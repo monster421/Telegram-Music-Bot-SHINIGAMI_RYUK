@@ -8,7 +8,9 @@
 
 ## ˜”*°• 𝔻𝕖𝕡𝕝𝕠𝕪 •°*”˜
 [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/)
-- Get your pyrogram session string from [replit](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+- Get your pyrogram session string from:<img alt="Repl.it" src="https://img.shields.io/badge/Repl.it-%230D101E.svg?&style=for-the-badge&logo=Repl.it&logoColor=white"/>[replit](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
 - Enable the worker after deployed your bot on Heroku
 - Add this in heroku Buildpack if ffmpeg errors shows after deploying:[https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git]
 
@@ -37,4 +39,5 @@
 - !𝗿𝘆𝘂𝗸: To check the ping status with server.
 - !𝗰𝗽𝘂: To check server cpu time and details.
 
+[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
 <img src="https://telegra.ph/file/2e419eca28153982c5e54.jpg" align="centre"/>
