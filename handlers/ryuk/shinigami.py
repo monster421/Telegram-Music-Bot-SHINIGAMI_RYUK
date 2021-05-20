@@ -21,7 +21,7 @@ from VOIP.voice import mp
 
 
 # in sec = 1sec
-DELETE_DELAY = 2
+DELETE_DELAY = 8
 # in min = 1min
 ADD_AUTO_MUSIC_TIME = 10
 # in hour = 1hour
