@@ -1,5 +1,5 @@
 #   一═デ︻Σ︻Σ..**ֆɦɨռɨɢǟʍɨ_Rʏʊӄ**..Σ︻Σ︻デ═一 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Riyuk-SingerVrtxBot.git/tree/Vrtx)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/>
 <img align="centre" src="http://ForTheBadge.com/images/badges/made-with-python.svg" />
 <img align="centre" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/> 
@@ -7,7 +7,7 @@
 <img src="https://telegra.ph/file/2e419eca28153982c5e54.jpg" align="centre"/>
 
 ## ˜”*°• 𝔻𝕖𝕡𝕝𝕠𝕪 •°*”˜
-
+[![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/)
 - Get your pyrogram session string from [replit](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
 - Enable the worker after deployed your bot on Heroku
 - Add this in heroku Buildpack if ffmpeg errors shows after deploying:[https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git]
