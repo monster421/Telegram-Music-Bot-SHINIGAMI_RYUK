@@ -37,8 +37,10 @@ PLUGINS = dict(
 
 vrtx = Client(SESSION_NAME, API_ID, API_HASH, plugins=PLUGINS)
 vrtx.start()
-print('🍁🎷一═デ︻ ֆɦɨռɨɢǟʍɨ_Rʏʊӄ ︻デ═一\nONLINE🍁🎷')
+print('🍁🎷一═デ︻ ֆɦɨռɨɢǟʍɨ_Rʏʊӄ ︻デ═一\nONLINE🍁🎷\n|--  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_-')
 idle()
 vrtx.stop()
-print('🍁⚰️一═デ︻ ֆɦɨռɨɢǟʍɨ_Rʏʊӄ ︻デ═一\nOFFLINE ⚰️🍁')
+print('🍁⚰️一═デ︻ ֆɦɨռɨɢǟʍɨ_Rʏʊӄ ︻デ═一\nOFFLINE ⚰️🍁\n|--  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_-')
 
+
+"|--  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_-"

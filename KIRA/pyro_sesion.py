@@ -1,9 +1,9 @@
-import asyncio
-import tgcrypto
-from pyrogram import Client
+"""
+<--------------------------->
+|  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
+<--------------------------->
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+Remastered Version of Riyuk_Singer_Vrtx
+"""
 
-
-GET_FROM = "https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py"
+FOLLOW_README_OR_GET_FROM = "https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py"

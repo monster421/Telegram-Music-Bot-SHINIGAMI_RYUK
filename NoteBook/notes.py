@@ -1,3 +1,11 @@
+"""
+<--------------------------->
+|  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
+<--------------------------->
+
+Remastered Version of Riyuk_Singer_Vrtx
+"""
+
 FULL_PLAYING_HELP =f"""一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n
 [🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
 **Send any valid audio file and i will play it in vc or reply !play to audio.mp3 file**

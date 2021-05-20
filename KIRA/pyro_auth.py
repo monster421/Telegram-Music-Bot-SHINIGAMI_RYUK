@@ -1,3 +1,11 @@
+"""
+<--------------------------->
+|  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
+<--------------------------->
+
+Remastered Version of Riyuk_Singer_Vrtx
+"""
+
 import os
 
 class DETATCH:

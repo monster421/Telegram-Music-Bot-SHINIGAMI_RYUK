@@ -37,14 +37,12 @@ class MusicPlayer(object):
         else:
             if len(playlist) == 1:
                 pl = f"""
-一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
+一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n🦋|--  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-🦋
 ✨ŇỖŴ_ƤĹÃЎĮŇĞ✨:-\n
 """
             else:
                 pl = f"""
-一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
+一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n🦋|--  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-🦋
 ✨ŇỖŴ_ƤĹÃЎĮŇĞ✨:-\n
 """
             pl += "\n".join([
@@ -120,15 +118,19 @@ async def network_status_changed_handler(gc: GroupCall, is_connected: bool):
         mp.chat_id = int("-100" + str(gc.full_chat.id))
         await mp.send_text(f"""
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
+[🦋]
 📢𝕆ℕ𝕃𝕀ℕ𝔼🟢
+
+|--  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
 """)
     else:
         await mp.send_text(f"""
 一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
+[🦋]
 🔇𝕀𝔻𝕃𝔼_𝕄𝕆𝔻𝔼_𝔸ℂ𝕋𝕀𝕍𝔼🔇
 --𝕊𝕃𝔼𝔼ℙ(🔶)
+
+|--  ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ     -_-
 """)              
         mp.chat_id = None
 
@@ -136,3 +138,6 @@ async def network_status_changed_handler(gc: GroupCall, is_connected: bool):
 @mp.group_call.on_playout_ended
 async def playout_ended_handler(_, __):
     await mp.skip_current_playing()
+
+
+

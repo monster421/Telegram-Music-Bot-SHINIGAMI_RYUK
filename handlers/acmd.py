@@ -28,5 +28,5 @@ async def show_help(_, m: Message):
     if mp.msg.get('!acmd') is not None:
         await mp.msg['!acmd'].delete()
     mp.msg['!acmd'] = await m.reply_text(ADMIN_PLAYING_HELP, quote=False)
-    await m.delete((reply, m), DELETE_DELAY)
+    await m.delete(DELETE_DELAY)
     #await _delay_delete_messages((reply, m), DELETE_DELAY)
