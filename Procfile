@@ -1,2 +1,2 @@
-worker: python3 ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ
+worker: python3 ʍǟֆȶɛʀʍɨռɖ
 
