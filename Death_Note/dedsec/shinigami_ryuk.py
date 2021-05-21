@@ -10,18 +10,35 @@
 
 import asyncio
 import os
-import ffmpeg
 from datetime import datetime, timedelta
+
 from pyrogram import Client, filters, emoji
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
+
 from VOIP.filters import main_filter, self_or_contact_filter
 from VOIP.voice import ded
+
 from NoteBook.notes import *
 from Misa_Amane.life_death import *
+
 from Misa_Amane.red_eye import current_vc
 from pytgcalls import GroupCall
 
+
+
+async def current_vc_filter(_, __, m: Message):
+    group_call = ded.group_call
+    if not group_call.is_connected:
+        return False
+    chat_id = int("-100" + str(group_call.full_chat.id))
+    if m.chat.id == chat_id:
+        return True
+    return False
+
+current_vc = filters.create(current_vc_filter)
+
+                                                                                                                                                   
 "+|========================================== ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_- ==============================================+"
 "******************************************** ℍ𝕒𝕟𝕕𝕝𝕖𝕤 𝕥𝕦𝕣𝕟𝕚𝕟𝕘 𝕠𝕟 𝕥𝕙𝕖 𝕦𝕤𝕖𝕣𝕓𝕠𝕥 ***********************************"
 
@@ -442,6 +459,7 @@ async def mute(_, m: Message):
 
 
 "+|========================================== ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_- ==============================================+"
+"*********************************************** 𝓔𝓝𝓓 𝓞𝓕 𝓛𝓘𝓕𝓔 **********************************************"
 
 async def _delay_delete_messages(messages: tuple, delay: int):
     await asyncio.sleep(delay)
@@ -450,3 +468,4 @@ async def _delay_delete_messages(messages: tuple, delay: int):
 
 "+|========================================== ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_- ==============================================+"
 "*********************************************** 𝓔𝓝𝓓 𝓞𝓕 𝓛𝓘𝓕𝓔 **********************************************"
+
