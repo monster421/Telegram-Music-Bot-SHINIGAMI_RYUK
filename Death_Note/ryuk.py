@@ -9,7 +9,7 @@
 
 from time import time
 from datetime import datetime
-from pyrogram import Client, filters, emoji
+from pyrogram import Client as Vrtx, filters, emoji
 from pyrogram.types import Message
 
 # DELAY_DELETE = 60
@@ -45,14 +45,14 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-@Client.on_message(filters.text
+@Vrtx.on_message(filters.text
                    & self_or_contact_filter
                    & ~filters.edited
                    & ~filters.via_bot
                    & filters.regex("^.ryuk$"))
-async def ping_pong(_, m: Message):
+async def ping_pong(_, kate: Message):
     start = time()
-    m_reply = await m.reply_text("...")
+    m_reply = await kate.reply_text("...")
     delta_ping = time() - start
     await m_reply.edit_text(
         f"""一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
