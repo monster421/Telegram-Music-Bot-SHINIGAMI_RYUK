@@ -9,14 +9,13 @@
 "+|========================================== ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_- ==============================================+"
 
 import os
-import ffmpeg
-
 from datetime import datetime
+
+import ffmpeg
 from pyrogram import emoji
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
 from pytgcalls import GroupCall
-from NoteBook.design_i import *
 
 
 "+|========================================== ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_- ==============================================+"
@@ -97,13 +96,13 @@ class DeathCharm(object):
         )
         return message
 
-    async def download_audio(self, m: Message):
+    async def download_audio(self, kate: Message):
         group_call = self.group_call
         client = group_call.client
         raw_file = os.path.join(client.workdir, DEFAULT_DOWNLOAD_DIR,
-                                f"{m.audio.file_unique_id}.raw")
+                                f"{kate.audio.file_unique_id}.raw")
         if not os.path.isfile(raw_file):
-            original_file = await m.download()
+            original_file = await kate.download()
             ffmpeg.input(original_file).output(
                 raw_file,
                 format='s16le',
