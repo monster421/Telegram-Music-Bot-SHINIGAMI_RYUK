@@ -12,7 +12,7 @@
 
 
 FULL_PLAYING_HELP =f"""一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一
-[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]
+[🦋](https://telegra.ph/file/2e419eca28153982c5e54.jpg)[🦋]
 **Send any valid audio file and i will play it in vc or reply !play to audio.mp3 file**
 
                 .   𝓖𝓻𝓸𝓾𝓹 𝓶𝓮𝓶𝓫𝓮𝓻 𝓬𝓸𝓶𝓼   .
