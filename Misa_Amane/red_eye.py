@@ -21,6 +21,7 @@ async def current_vc_filter(_, __, m: Message):
     if m.chat.id == chat_id:
         return True
     return False
+
 current_vc = filters.create(current_vc_filter)
 
 "+|========================================== ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_- ==============================================+"
