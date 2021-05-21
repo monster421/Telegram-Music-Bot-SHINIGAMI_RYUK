@@ -56,7 +56,7 @@ async def join_group_call(client, m: Message):
     group_call.client = client
     if group_call.is_connected:
         await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
             "[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]\n"
             "                          .**Already joined**\n"
             "\n"
@@ -83,7 +83,7 @@ async def show_current_playing_time(_, m: Message):
     playlist = ded.playlist
     if not start_time:
         reply = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
             "[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]"
             "                          .**Unknown**\n"
             "\n"
@@ -200,14 +200,15 @@ async def play_track(client, m: Message):
     # check already added
     if playlist and playlist[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
-        reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n**Already added**")
+        reply = await m.reply_text(f"                        .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n"
+                                   "                         .**Already added**")
         await _delay_delete_messages((reply, m), Kill_Time)
         return
     # add to playlist
     playlist.append(m_audio)
     if len(playlist) == 1:
         m_status = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
             "[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]"            
             "˜”*°• Analyzing Audio & sending to server •°*”˜\n"
             "\n"
@@ -262,7 +263,7 @@ async def skip_track(_, m: Message):
             await ded.send_playlist()
         except (ValueError, TypeError):
             reply = await m.reply_text(
-                f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+                f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
                 "[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]"
                 "                          .**Invalid input**"
                 "\n"
@@ -307,7 +308,7 @@ async def list_voice_chat(client, m: Message):
         chat_id = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(chat_id)
         reply = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
             "[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]"
             "                          .**currently in the voice chat:**"
             "                          .**{chat.title}**\n"
@@ -336,8 +337,8 @@ async def stop_playing(_, m: Message):
     group_call = ded.group_call
     group_call.stop_playout()
     reply = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
-            "[🦋](https://telegra.ph/file/8bdbb1581cc0914586fe2.jpg)[🦋]"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            "[🦋](https://telegra.ph/file/2e419eca28153982c5e54.jpg)[🦋]"
             "                          .**⏹Stopped Singing**\n"
             "\n"
             "-/===============\-\n"
@@ -363,8 +364,8 @@ async def pause_playing(_, m: Message):
     ded.group_call.pause_playout()
     await ded.update_start_time(reset=True)
     reply = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
-            "[🦋](https://telegra.ph/file/53c1e3bb9d92f745d32bc.jpg[🦋]"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            "[🦋](https://telegra.ph/file/53c1e3bb9d92f745d32bc.jpg)[🦋]"
             "                          .**⏸Paused**"
             "\n"
             "-/===============\-\n"
@@ -393,7 +394,7 @@ async def restart_playing(_, m: Message):
     group_call.restart_playout()
     await ded.update_start_time()
     reply = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
             "[🦋](https://telegra.ph/file/c20d0c751ae61a68f8330.jpg)[🦋]"
             "                          .🔁Playing from the beginning"
             "-_-\n"
@@ -417,7 +418,7 @@ async def restart_playing(_, m: Message):
 async def resume_playing(_, m: Message):
     ded.group_call.resume_playout()
     reply = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
             "[🦋](https://telegra.ph/file/0f0a508854eebdf8cd693.jpg)[🦋]"
             "                          .**▶️Resumed**"
             "\n"
@@ -481,7 +482,7 @@ async def clean_raw_pcm(client, m: Message):
                 count += 1
                 os.remove(os.path.join(download_dir, fn))
     reply = await m.reply_text(
-            f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
+            f"                         .一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一"
             "                          .**Cleaned** {count} files\n"
             "\n"
             "-/===============\-\n"
