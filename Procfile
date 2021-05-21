@@ -1,2 +1,2 @@
-worker: python3 mastermind
+worker: python3 ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ.py
 
