@@ -127,7 +127,7 @@ async def play_track(client, m: Message):
     playlist = ded.playlist
     # check audio
     if m.audio:
-        if m.audio.duration > (DURATION_AUTOPLAY_MIN * 60):
+        if m.audio.duration > (Auto_Add2Play_TimeM * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(Auto_Add2Play_TimeM)} min won't be automatically "
@@ -137,12 +137,12 @@ async def play_track(client, m: Message):
                 "|**ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ**|\n"
                 "+\===============/+\n"
             )
-            await _delay_delete_messages((reply,), DELETE_DELAY)
+            await _delay_delete_messages((reply,), Kill_Time)
             return
         m_audio = m
     elif m.reply_to_message and m.reply_to_message.audio:
         m_audio = m.reply_to_message
-        if m_audio.audio.duration > (DURATION_PLAY_HOUR * 60 * 60):
+        if m_audio.audio.duration > (Kill_Hour * 60 * 60):
             reply = await m.reply_text(
                 f"{emoji.ROBOT} audio which duration longer than "
                 f"{str(Kill_Hour)} hours won't be added to playlist\n"
@@ -151,7 +151,7 @@ async def play_track(client, m: Message):
                 "|**ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ**|\n"
                 "+\===============/+\n"
             )
-            await _delay_delete_messages((reply,), DELETE_DELAY)
+            await _delay_delete_messages((reply,), Kill_Time)
             return
     else:
         await ded.send_playlist()
@@ -161,7 +161,7 @@ async def play_track(client, m: Message):
     if playlist and playlist[-1].audio.file_unique_id \
             == m_audio.audio.file_unique_id:
         reply = await m.reply_text(f"一═デ︻ **ֆɦɨռɨɢǟʍɨ_Rʏʊӄ** ︻デ═一\n**Already added**")
-        await _delay_delete_messages((reply, m), DELETE_DELAY)
+        await _delay_delete_messages((reply, m), Kill_Time)
         return
     # add to playlist
     playlist.append(m_audio)
