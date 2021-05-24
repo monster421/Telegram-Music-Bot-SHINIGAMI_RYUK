@@ -12,18 +12,16 @@
 ## ♢----------------------------------------------> ωну ιѕ тнιѕ вσт ?? 🤖
  - © This is a Telegram userbot that can play music in voice chat.
 ## ωσякιηg ιηѕтαη¢є ? 🚀
-- [![Generic badge](https://img.shields.io/badge/@vrtxmusic-group-white.svg)](https:/t.me/vrtxmusic) The working userbot instance can be found here 
+- [![Generic badge](https://img.shields.io/badge/@vrtxmusic-group-white.svg)](https://t.me/vrtxmusic) The working userbot instance can be found here 
                                                             
 - [![Generic badge](https://img.shields.io/badge/@vrtxwork-channel-white.svg)](https://t.me/vrtxwork/37) Channel for updates 
 
 ## ♢----------------------------------------------> нσω тσ ∂єρℓσу ?   ⚜️
 * There are mainly two ways to easy deploy this bot but do rememeber to follow these two points or else build will fail
 
--🌱 [![Generic badge](https://img.shields.io/badge/REPLIT-ֆɦɨռɨɢǟʍɨ_Rʏʊӄ-white.svg)](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)Get your pyrogram session string
+-🌱 [![Generic badge](https://img.shields.io/badge/REPLIT-ֆɦɨռɨɢǟʍɨ_Rʏʊӄ-white.svg)](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py) Get your pyrogram session string 
 
--🌱 Enable the dyno in heroku if u deployed ur bot in Heroku
-#
--📍 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
+-📍 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx) Enable the dyno in heroku if u deployed ur bot in Heroku
 
 -📍 [🐳 𝗗𝗢𝗖𝗞𝗘𝗥-𝗖𝗢𝗡𝗧𝗔𝗜𝗡𝗘𝗥 🐳](Dockerfile)
 
