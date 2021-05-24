@@ -19,16 +19,18 @@
 
 
 
-## ˜”*°• ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 •°*”˜
+## ˜”*°• ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 •°*”
 
-`/* 𝘔𝘦𝘮𝘦𝘣𝘦𝘳 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴`
+/* 𝘔𝘦𝘮𝘦𝘣𝘦𝘳 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴
+
 `**.sing**`: Reply with an audio to play/queue it.Also used to check playlist.
 
 `**.now**`: Show current playing time of current track.
 
 `**.cmd**`: used for showing all bot commands.
 
-`/* 𝘈𝘥𝘮𝘪𝘯 & 𝘖𝘸𝘯𝘦𝘳 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 `
+/* 𝘈𝘥𝘮𝘪𝘯 & 𝘖𝘸𝘯𝘦𝘳 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 
+
 `**.on**`: Command like a boss to join voice chat of current group.
 
 `**.off**`: Leave current voice chat where is DJing.
