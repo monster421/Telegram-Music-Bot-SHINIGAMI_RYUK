@@ -55,11 +55,13 @@
 * Telegram-Music-Bot-SHINIGAMI_RYUK is licensed under the GNU General Public License v3.0 [GNU_V3.0](LICENSE)
 
 * Permissions 💢
-`✔ Commercial use`
-`✔ Modification`
-`✔ Distribution`
-`✔ Patent use`
-`✔ Private use` 
+```sh
+✔ Commercial use
+✔ Modification
+✔ Distribution
+✔ Patent use
+✔ Private use 
+```
 
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
 <img src="https://telegra.ph/file/2e419eca28153982c5e54.jpg" align="centre"/>
