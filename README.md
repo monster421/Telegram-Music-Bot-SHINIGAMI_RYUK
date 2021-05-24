@@ -23,24 +23,23 @@
 ```sh
 /* 𝘔𝘦𝘮𝘦𝘣𝘦𝘳 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴
 
-**`.sing`**: Reply with an audio to play/queue it.Also used to check playlist.
-**`.now`**: Show current playing time of current track.
-**`.cmd`**: used for showing all bot commands.
+*.sing: Reply with an audio to play/queue it.Also used to check playlist.
+*.now: Show current playing time of current track.
+*.cmd: used for showing all bot commands.
 
 /* 𝘈𝘥𝘮𝘪𝘯 & 𝘖𝘸𝘯𝘦𝘳 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 
-
-**`.on`**: Command like a boss to join voice chat of current group.
-**`.off`**: Leave current voice chat where is DJing.
-**`.check`**: Check which VC is joined by the bot.
-**`.end`**: To stop playing the song being played.
-**`.pause`**: Pause playing.
-**`.resume`**: Resume playing.
-**`.mutevc`**: Mute the VC.
-**`.unmutevc`**: Unmute the VC.
-**`.replay`**: Play from the beginning with.
-**`.skip`**: Skip the current or skip n(n=>2).
-**`.temp`**: Remove unused RAW files. 
-**`.ryuk`**: To check the ping status with server.
+*.on: Command like a boss to join voice chat of current group.
+*.off: Leave current voice chat where is DJing.
+*.check: Check which VC is joined by the bot.
+*.end: To stop playing the song being played.
+*.pause: Pause playing.
+*.resume: Resume playing.
+*mutevc: Mute the VC.
+*.unmutevc: Unmute the VC.
+*.replay: Play from the beginning with.
+*.skip: Skip the current or skip n(n=>2).
+*.temp: Remove unused RAW files. 
+*.ryuk: To check the ping status with server.
 ```
 
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
