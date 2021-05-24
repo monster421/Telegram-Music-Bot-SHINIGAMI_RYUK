@@ -12,8 +12,9 @@
 ## ♢----------------------------------------------> ωну ιѕ тнιѕ вσт ?? 🤖
  - © This is a Telegram userbot that can play music in voice chat.
 ## ωσякιηg ιηѕтαη¢є ? 🚀
-- The working userbot instance can be found here [@VRTXMUSIC](https:/t.me/vrtxmusic)
-- Channel for updates [@VRTXWORK](https://t.me/vrtxwork/37)
+- The working userbot instance can be found here [![Generic badge](https://img.shields.io/badge/@vrtxmusic-group-grey.svg)(https:/t.me/vrtxmusic)
+                                                            
+- Channel for updates [![Generic badge](https://img.shields.io/badge/@vrtxwork-channel-white.svg)(https://t.me/vrtxwork/37)
 
 ## ♢----------------------------------------------> нσω тσ ∂єρℓσу ?   ⚜️
 * There are mainly two ways to easy deploy this bot but do rememeber to follow these two points or else build will fail
@@ -70,7 +71,5 @@
 ✔ Private use 
 ```
 
-[![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
 <img src="https://telegra.ph/file/2e419eca28153982c5e54.jpg" align="centre"/>
-
 🍁|===================== ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ -_- =====================|+🍁
