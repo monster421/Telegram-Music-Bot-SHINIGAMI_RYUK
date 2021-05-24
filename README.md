@@ -9,17 +9,17 @@
 
 
 ## ωσякιηg ιηѕтαη¢є ? 🚀
-- 
+- The working userbot instance can be found here [@VRTXMUSIC](https:/t.me/vrtxmusic)
+- Channel for updates [@VRTXWORK](https://t.me/vrtxwork/37)
 
 ## ♢----------------------------------------------> нσω тσ ∂єρℓσу ?   ⚜️
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
-
+```sh
+* There are mainly two ways to easy deploy this bot but do rememeber to follow these two points or else build will fail
 - Get your pyrogram session string from: [![@mastermindvrtx](https://img.shields.io/badge/REPLIT-press%20%3E-critical)[🅲🅾🅳🅴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
 - Enable the worker after deployed your bot on Heroku
-- Add this in heroku Buildpack if ffmpeg errors shows after deploying:[https://github.com/mastermindvrtx/Heroku-Buildpack-ffmpeg.git]
-
-
+```
+- 📍 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
+- 📍 [🐳 𝗗𝗢𝗖𝗞𝗘𝗥-𝗖𝗢𝗡𝗧𝗔𝗜𝗡𝗘𝗥 🐳](Dockerfile)
 
 ## ♢----------------------------------------------> ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 •°*”
 
@@ -50,6 +50,16 @@
 - [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/)
 - [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/)
 - [![GitHub release](https://img.shields.io/github/release/Naereen/StrapDown.js.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/)
+
+## ♢----------------------------------------------> LICENSE 💢 
+* Telegram-Music-Bot-SHINIGAMI_RYUK is licensed under the GNU General Public License v3.0 [GNU_V3.0](LICENSE)
+
+* Permissions 💢
+`✔ Commercial use`
+`✔ Modification`
+`✔ Distribution`
+`✔ Patent use`
+`✔ Private use` 
 
 [![Awesome Badges](https://img.shields.io/badge/badges-awesome-green.svg)](https://github.com/Naereen/badges)
 <img src="https://telegra.ph/file/2e419eca28153982c5e54.jpg" align="centre"/>
