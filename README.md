@@ -51,7 +51,8 @@
 
 
 ## ♢----------------------------------------------> ʀɛʟɛǟֆɛֆ
-- [![Generic badge](https://img.shields.io/badge/Release-v7_Stable_Heroku_Docker_Radio-purple.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/tag/v7_Stable)
+- [![Generic badge](https://img.shields.io/badge/Release-v7_Stable_Heroku_Docker_FM-green.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/tag/v8_Stable)
+- [![Generic badge](https://img.shields.io/badge/Release-v7_Stable_Heroku_Docker_fmWIP-purple.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/tag/v7_Stable)
 - [![Generic badge](https://img.shields.io/badge/Release-v6_Stable_Dockerized-blue.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/tag/v6_Stable)
 - [![Generic badge](https://img.shields.io/badge/Release-v7_Beta-orange.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/tag/v7_beta)
 - [![Generic badge](https://img.shields.io/badge/Release-init-black.svg)](https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK/releases/tag/init)
