@@ -53,8 +53,8 @@
 
 
 ## ♢----------------------------------------------> ʀɛʟɛǟֆɛֆ
-- [![Generic badge](https://img.shields.io/badge/Release-v1.2.1_Beta-green.svg)](https://github.com/mastermindvrtx/Telegram-ImagetoPDF-Bot/releases/tag/v6_Stable)
-- [![Generic badge](https://img.shields.io/badge/Release-v1.1_beta-red.svg)](https://github.com/mastermindvrtx/Telegram-ImagetoPDF-Bot/releases/tag/v5_Stable)
+- [![Generic badge](https://img.shields.io/badge/Release-v6_Stable-blue.svg)](https://github.com/mastermindvrtx/Telegram-ImagetoPDF-Bot/releases/tag/v6_Stable)
+- [![Generic badge](https://img.shields.io/badge/Release-v5_Stable)-orange.svg)](https://github.com/mastermindvrtx/Telegram-ImagetoPDF-Bot/releases/tag/v5_Stable)
 - [![Generic badge](https://img.shields.io/badge/Release-init-black.svg)](https://github.com/mastermindvrtx/Telegram-ImagetoPDF-Bot/releases/tag/init)
 
 ## ♢----------------------------------------------> LICENSE 💢 
