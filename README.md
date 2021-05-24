@@ -18,7 +18,7 @@
 ## ♢----------------------------------------------> нσω тσ ∂єρℓσу ?   ⚜️
 * There are mainly two ways to easy deploy this bot but do rememeber to follow these two points or else build will fail
 
--🌱 Get your pyrogram session string from: [![@mastermindvrtx](https://img.shields.io/badge/REPLIT-press%20%3E-critical)[🅲🅾🅳🅴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
+-🌱 Get your pyrogram session string from: [![Generic badge](https://img.shields.io/badge/REPLIT-🅲🅾🅳🅴-white.svg)](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
 
 -🌱 Enable the dyno in heroku if u deployed ur bot in Heroku
 #
