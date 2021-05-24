@@ -13,13 +13,13 @@
 - Channel for updates [@VRTXWORK](https://t.me/vrtxwork/37)
 
 ## ♢----------------------------------------------> нσω тσ ∂єρℓσу ?   ⚜️
-```sh
+
 * There are mainly two ways to easy deploy this bot but do rememeber to follow these two points or else build will fail
-- Get your pyrogram session string from: [![@mastermindvrtx](https://img.shields.io/badge/REPLIT-press%20%3E-critical)[🅲🅾🅳🅴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
-- Enable the worker after deployed your bot on Heroku
-```
-- 📍 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
-- 📍 [🐳 𝗗𝗢𝗖𝗞𝗘𝗥-𝗖𝗢𝗡𝗧𝗔𝗜𝗡𝗘𝗥 🐳](Dockerfile)
+-🌱 Get your pyrogram session string from: [![@mastermindvrtx](https://img.shields.io/badge/REPLIT-press%20%3E-critical)[🅲🅾🅳🅴](https://replit.com/@mastermindvrtx/ShinigamiRyukPyrogramSesion#main.py)
+-🌱 Enable the dyno in heroku if u deployed ur bot in Heroku
+#
+-📍 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-Music-Bot-SHINIGAMI_RYUK.git/tree/Vrtx)
+-📍 [🐳 𝗗𝗢𝗖𝗞𝗘𝗥-𝗖𝗢𝗡𝗧𝗔𝗜𝗡𝗘𝗥 🐳](Dockerfile)
 
 ## ♢----------------------------------------------> ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊 •°*”
 
